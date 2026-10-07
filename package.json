@@ -1,0 +1,24 @@
+{
+  "name": "edtech-tenant-storage-lifecycle",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/course_delivery_server.ts",
+    "demo": "tsx src/tenant_setup_demo.ts",
+    "test": "node --import tsx --test test/tenant_lifecycle.test.ts",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
